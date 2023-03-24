@@ -1,0 +1,541 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Setting;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Schema;
+
+class SettingSeeder extends Seeder
+{
+    public function run(): void
+    {
+        Schema::disableForeignKeyConstraints();
+        Setting::truncate();
+        Schema::enableForeignKeyConstraints();
+        $data = [
+            [
+                'unique_key' => 'general_site_name',
+                'key' => 'site_name',
+                'value' => 'Of Course',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_short_description_ar',
+                'key' => 'short_description_ar',
+                'value' => 'نهتم بتقديم أنظمة غذائية صحية تحت إشراف نخبة من الأخصائيين الصحيين المختصين في مجال الأنظمة الغذائية',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_short_description_en',
+                'key' => 'short_description_en',
+                'value' => 'We are interested in providing healthy food systems under the supervision of a group of health professionals specialized in the field of food systems',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_seo_description',
+                'key' => 'seo_description',
+                'value' => 'seo_description',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_seo_keyword',
+                'key' => 'seo_keyword',
+                'value' => 'seo_keyword',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_email',
+                'key' => 'email',
+                'value' => 'test@test.com',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_phone',
+                'key' => 'phone',
+                'value' => '+9651873333',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_whatsapp_phone',
+                'key' => 'whatsapp_phone',
+                'value' => '+9651873333',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_whatsapp_text',
+                'key' => 'whatsapp_text',
+                'value' => 'test text',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_facebook',
+                'key' => 'facebook',
+                'value' => 'facebook',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_twitter',
+                'key' => 'twitter',
+                'value' => 'twitter',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_youtube',
+                'key' => 'youtube',
+                'value' => 'youtube',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_instagram',
+                'key' => 'instagram',
+                'value' => 'instagram',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_logo',
+                'key' => 'logo',
+                'value' => 'test_logo',
+                'group' => 'file',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_logo_white',
+                'key' => 'logo_white',
+                'value' => 'test_logo',
+                'group' => 'file',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_favicon',
+                'key' => 'favicon',
+                'value' => 'favicon',
+                'group' => 'file',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_payment_name',
+                'key' => 'payment_name',
+                'value' => 'tap',
+                'group' => 'general_payment',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_payment_key',
+                'key' => 'payment_key',
+                'value' => 'testKeyPaymentTap',
+                'group' => 'general_payment',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_payment_credit',
+                'key' => 'payment_credit',
+                'value' => true,
+                'group' => 'general_payment',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_payment_transfer',
+                'key' => 'payment_transfer',
+                'value' => true,
+                'group' => 'general_payment',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_payment_paypal',
+                'key' => 'payment_paypal',
+                'value' => true,
+                'group' => 'general_payment',
+                'type' => 'general',
+            ],
+
+            [
+                'unique_key' => 'general_smtp_username',
+                'key' => 'smtp_username',
+                'value' => 'test smtp',
+                'group' => 'general_smtp',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_smtp_password',
+                'key' => 'payment_password',
+                'value' => '12344535',
+                'group' => 'general_smtp',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_smtp_host',
+                'key' => 'smtp_host',
+                'value' => 'localhost',
+                'group' => 'general_smtp',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_smtp_port',
+                'key' => 'smtp_port',
+                'value' => '8000',
+                'group' => 'general_smtp',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_sms_name',
+                'key' => 'sms_name',
+                'value' => 'CM',
+                'group' => 'general_sms',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_sms_key',
+                'key' => 'sms_key',
+                'value' => 'your key',
+                'group' => 'general_sms',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_google_tag_id',
+                'key' => 'google_tag_id',
+                'value' => '1',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_snap_pixel',
+                'key' => 'snap_pixel',
+                'value' => '<script></script>',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_tiktok_pixel',
+                'key' => 'tiktok_pixel',
+                'value' => '<script></script>',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_app_store_link',
+                'key' => 'app_store_link',
+                'value' => 'https://www.google.com',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_play_store_link',
+                'key' => 'play_store_link',
+                'value' => 'https://www.google.com',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_notification_message_header',
+                'key' => 'notification_message_header',
+                'value' => 'notification_message_header',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'general_recaptcha',
+                'key' => 'recaptcha',
+                'value' => 'android',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'default_meal_selection',
+                'key' => 'default_meal_selection',
+                'value' => 2,
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'maximum_redeem_percent',
+                'key' => 'maximum_redeem_percent',
+                'value' => null,
+                'type' => 'referral',
+            ],
+            [
+                'unique_key' => 'maximum_redeem_amount',
+                'key' => 'maximum_redeem_amount',
+                'value' => null,
+                'type' => 'referral',
+            ],
+            [
+                'unique_key' => 'default_package_selection',
+                'key' => 'default_package_selection',
+                'value' => 2,
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'term_desc_ar',
+                'key' => 'desc_ar',
+                'value' => 'Terms and Condition In AR',
+                'type' => 'terms',
+            ],
+            [
+                'unique_key' => 'term_desc_en',
+                'key' => 'desc_en',
+                'value' => 'Terms and Condition In En',
+                'type' => 'terms',
+            ],
+            [
+                'unique_key' => 'term_payment_policy_ar',
+                'key' => 'desc_ar',
+                'value' => 'Terms Payment Policy In Ar',
+                'type' => 'terms',
+            ],
+            [
+                'unique_key' => 'term_payment_policy_en',
+                'key' => 'desc_en',
+                'value' => 'Terms Payment Policy In En',
+                'type' => 'terms',
+            ],
+            [
+                'unique_key' => 'privacy_desc_ar',
+                'key' => 'desc_ar',
+                'value' => 'Privacy description AR',
+                'type' => 'privacy',
+            ],
+            [
+                'unique_key' => 'privacy_desc_en',
+                'key' => 'desc_en',
+                'value' => 'Privacy description EN',
+                'type' => 'privacy',
+            ],
+            [
+                'unique_key' => 'about_desc_ar',
+                'key' => 'desc_ar',
+                'value' => 'About description AR',
+                'type' => 'about',
+            ],
+            [
+                'unique_key' => 'about_desc_en',
+                'key' => 'desc_en',
+                'value' => 'About description EN',
+                'type' => 'about',
+            ],
+            [
+                'unique_key' => 'tutorial_video_url',
+                'key' => 'video_url',
+                'value' => 'https://youtu.be/_uQrJ0TkZlc',
+                'type' => 'tutorials',
+            ],
+            [
+                'unique_key' => 'tutorial_script_en',
+                'key' => 'script_en',
+                'value' => 'script_en',
+                'type' => 'tutorials',
+            ],
+            [
+                'unique_key' => 'tutorial_script_ar',
+                'key' => 'script_ar',
+                'value' => 'script_ar',
+                'type' => 'tutorials',
+            ],
+            [
+                'unique_key' => 'available_morning_shift',
+                'key' => 'morning',
+                'value' => true,
+                'group' => 'available',
+                'type' => 'shifts',
+            ],
+            [
+                'unique_key' => 'available_evening_shift',
+                'key' => 'evening',
+                'value' => false,
+                'group' => 'available',
+                'type' => 'shifts',
+            ],
+            [
+                'unique_key' => 'default_morning_shift',
+                'key' => 'morning',
+                'value' => true,
+                'group' => 'default',
+                'type' => 'shifts',
+            ],
+            [
+                'unique_key' => 'default_evening_shift',
+                'key' => 'evening',
+                'value' => false,
+                'group' => 'default',
+                'type' => 'shifts',
+            ],
+            [
+                'unique_key' => 'page_1_content_ar',
+                'key' => 'content_ar',
+                'value' => 'content ar',
+                'group' => 'page1',
+                'type' => 'splash_screen',
+            ],
+            [
+                'unique_key' => 'page_1_content_en',
+                'key' => 'content_en',
+                'value' => 'content en',
+                'group' => 'page1',
+                'type' => 'splash_screen',
+            ],
+            [
+                'unique_key' => 'page_2_content_ar',
+                'key' => 'content_ar',
+                'value' => 'content ar',
+                'group' => 'page2',
+                'type' => 'splash_screen',
+            ],
+            [
+                'unique_key' => 'page_2_content_en',
+                'key' => 'content_en',
+                'value' => 'content en',
+                'group' => 'page2',
+                'type' => 'splash_screen',
+            ],
+            [
+                'unique_key' => 'page_3_content_ar',
+                'key' => 'content_ar',
+                'value' => 'content ar',
+                'group' => 'page3',
+                'type' => 'splash_screen',
+            ],
+            [
+                'unique_key' => 'page_3_content_en',
+                'key' => 'content_en',
+                'value' => 'content en',
+                'group' => 'page3',
+                'type' => 'splash_screen',
+            ],
+            [
+                'unique_key' => 'title_banner_home_page_ar',
+                'key' => 'title_banner_ar',
+                'value' => 'نساعدك على بناء حياة صحية جيدة',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'title_banner_home_page_en',
+                'key' => 'title_banner_en',
+                'value' => 'We help you build a good healthy life',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'description_banner_home_page_ar',
+                'key' => 'description_banner_ar',
+                'value' => 'نقــدم إستشارات غذائية وأطباق بكميات متوازنة للأنظمة الصحية تساعد مشتركينا للوصول للهدف نهتم بتقديم أنظمة غذائية صحية تحت إشراف نخبة من الأخصائيين الصحيين المختصين',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'description_banner_home_page_en',
+                'key' => 'description_banner_en',
+                'value' => 'We provide nutritional consultations and dishes in balanced quantities for health systems that help our subscribers to reach the goal. We are interested in providing healthy diets under the supervision of a group of specialized health specialists',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'link_1_banner_home_page',
+                'key' => 'link_1_banner',
+                'value' => 'http://www.google.com',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'text_link_1_banner_home_page_ar',
+                'key' => 'text_link_1_banner_ar',
+                'value' => 'اكتشف قائمة الطعام',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'text_link_1_banner_home_page_en',
+                'key' => 'text_link_1_banner_en',
+                'value' => 'Explore the menu',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'link_2_banner_home_page',
+                'key' => 'link_2_banner',
+                'value' => 'http://www.google.com',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'text_link_2_banner_home_page_ar',
+                'key' => 'text_link_2_banner_ar',
+                'value' => 'انظــر مـا يتــم تحضيــره',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'text_link_2_banner_home_page_en',
+                'key' => 'text_link_2_banner_en',
+                'value' => 'See being prepared',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'image_banner_home_page',
+                'key' => 'image_banner',
+                'value' => 'image banner',
+                'type' => 'general',
+                'group' => 'file',
+            ],
+            [
+                'unique_key' => 'title_features_section_ar',
+                'key' => 'title_features_section_en',
+                'value' => 'نساعدك على بناء حياة صحية جيدة',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'title_features_section_en',
+                'key' => 'title_features_section_en',
+                'value' => 'We help you build a good healthy life',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'image_features_section',
+                'key' => 'image_features_section',
+                'value' => 'image_feature_section.png',
+                'type' => 'general',
+                'group' => 'file',
+            ],
+
+            [
+                'unique_key' => 'title_banner_bottom_ar',
+                'key' => 'title_banner_bottom_ar',
+                'value' => 'طلب استشارة من إختصاصي التغذية الخاص بك',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'title_banner_bottom_en',
+                'key' => 'title_banner_bottom_en',
+                'value' => 'Seek advice from your dietician',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'description_banner_bottom_ar',
+                'key' => 'description_banner_bottom_ar',
+                'value' => 'استعن بأخصائيين تغذية مميزين واطلب الإستشارة الصحية الخاصة بك',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'description_banner_bottom_en',
+                'key' => 'description_banner_bottom_en',
+                'value' => 'Hire distinguished nutritionists and seek your health advice',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'text_link_banner_bottom_ar',
+                'key' => 'text_link_banner_bottom_ar',
+                'value' => 'اطلب استشارة',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'text_link_banner_bottom_en',
+                'key' => 'text_link_banner_bottom_en',
+                'value' => 'Ask for advice',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'link_banner_bottom',
+                'key' => 'link_banner_bottom',
+                'value' => 'https://www.google.com/',
+                'type' => 'general',
+            ],
+            [
+                'unique_key' => 'image_banner_bottom',
+                'key' => 'image_banner_bottom',
+                'value' => 'image_banner_bottom_section.png',
+                'type' => 'general',
+                'group' => 'file',
+            ],
+        ];
+
+        foreach ($data as $row) {
+            Setting::updateOrCreate(
+                ['unique_key' => $row['unique_key']],
+                ['key' => $row['key'] ?? null, 'value' => $row['value'] ?? null, 'type' => $row['type'], 'group' => $row['group'] ?? null],
+            );
+        }
+    }
+}

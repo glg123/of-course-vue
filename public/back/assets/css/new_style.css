@@ -1,0 +1,179 @@
+
+
+/* New Style :: Wesam */
+#sidebar-menu ul li ul.sub-menu li a {
+    padding: 13px 20px;
+}
+#sidebar-menu ul li ul.sub-menu li a:hover{
+    background: #3a52ee !important;
+}
+#sidebar-menu ul li a{
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+#sidebar-menu ul li a:hover {
+    color: #fff;
+    background-color: #4256d026 !important;
+}
+.vertical-menu .metismenu li {
+    margin: 0px auto 2px;
+}
+.main-content .page-card .page-card-btn-groub {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+.main-content .page-card .page-card-btn-groub .btn {
+    margin-right: 0 !important;
+    font-size: 12px;
+    padding: 10px 15px !important;
+}
+.main-content .page-card .page-card-btn-groub .btn:hover {
+    background: #e0e4f5 !important;
+    /* background: #3143b5  !important; */
+}
+.main-content .page-card .page-card-btn-groub .btn.btn-light:hover{
+    background: #3143b5  !important;
+}
+.main-content .main-nav {
+    width: 95%;
+    margin: 12px auto;
+}
+.main-content .page-card {
+    width: 95%;
+    margin: 12px auto;
+}
+.main-content .page-card .page-main-title {
+    font-size: 18px;
+}
+.main-content .page-card .table-title {
+    margin-bottom: 12px !important;
+    font-size: 16px;
+}
+.border-bottom{
+    border-color: #9C9C9C !important;
+}
+.main-content .page-card .form-content .form-label {
+    margin-right: 0;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.main-content .page-card .table-container .table-tools {
+    align-items: center;
+}
+.main-content .page-card .form-content .form-btn:hover{
+    background: #3143b5;
+}
+.main-content .page-card .filter-box{
+    margin-bottom: 15px;
+}
+.filter-box .col-lg-3{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.filter-box .mt-lg-3{
+    margin-top: 10px !important;
+}
+.main-content .main-nav .main-nav-btn-groub .btn{
+    margin-right: 0 !important;
+    padding: 11px 16px !important;
+    min-width: 125px;
+}
+.main-content .main-nav .main-nav-btn-groub {
+    gap: 5px;
+}
+.filter-box .col-lg-4{
+    padding-right: 6px;
+    padding-left: 6px;
+}
+.pickDateLayout {
+    justify-content: space-between;
+    height: 41px;
+}
+.pickDateLayout h5{
+    font-size: 14px;
+    line-height: 0;
+    margin: 0 !important;
+    padding: 0 8px;
+}
+
+.page-card form .mb-5{
+    margin-bottom: 18px !important;
+}
+.main-content .page-card .form-content .form-label {
+    margin-bottom: 9px;
+}
+.main-content .page-card .table-container .table thead th {
+    font-weight: 700;
+    font-size: 13px;
+    min-width: 100px;
+}
+.table-responsive::-webkit-scrollbar {
+    height: 20px;
+    background-color: darkgrey;
+}
+.table-responsive::-webkit-scrollbar {
+    height: 13px;
+    background-color: #e8e8e8;
+    border-radius: 100px;
+}
+.table-responsive::-webkit-scrollbar-track {
+    background-color: #e8e8e8;
+    border-radius: 100px;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #c5c5c5;
+    border-radius: 100px;
+}
+.main-content .main-nav .header-user-name {
+    margin: 0;
+}
+#page-header-user-dropdown{
+    gap: 12px;
+}
+.main-content .page-card .page-card-btn-groub-2 .btn {
+    margin-right: 0 !important;
+    min-width: 142px;
+    padding: 12px 20px !important;
+}
+.main-content .page-card .page-card-btn-groub-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+.main-content .page-card .page-card-btn-groub-2 .btn:hover{
+    background: #3a52ee;
+    color: #fff !important;
+}
+.main-content .page-card table .btn {
+    min-width: 150px;
+}
+.main-content .page-card .page-card-btn-groub .btn-success:hover {
+    background: #21a757 !important;
+}
+.main-content .page-card .page-card-btn-groub .btn-black:hover{
+    background: #000000 !important;
+}
+.main-content .page-card .page-card-btn-groub .btn-danger:hover {
+    background: #c53c3c !important;
+}
+.main-content .page-card .table-title-buttons {
+    justify-content: flex-end !important;
+}
+#password-addon {
+    position: absolute;
+    left: 17px;
+    top: 6px;
+    background-color: transparent;
+    border: 0;
+    font-size: 22px;
+    padding: 0 !important;
+    z-index: 9;
+}

@@ -1,0 +1,37 @@
+html, body {
+    direction: ltr;
+}
+
+.main-content{
+    margin-right: 0;
+    margin-left: 250px;
+    min-height: 100vh;
+}
+
+.page-content {
+    text-align: left !important
+}
+
+#sidebar-menu {
+    text-align: left !important
+}
+
+.form-check {
+    text-align: left;
+}
+
+.form-header img.img-fluid {
+    transform: rotate(180deg);
+}
+
+.main-content .page-card .form-header .form-main-title {
+    text-align: left;
+}
+.form-main-title:before {
+    right: auto;
+    left: 70%;
+}
+
+.form-select.primary-select {
+    background-position: right 0.75rem center !important;
+}

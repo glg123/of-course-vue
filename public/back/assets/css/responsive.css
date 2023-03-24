@@ -1,0 +1,48 @@
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 1344px) {
+    
+    .main-content .page-card .page-card-btn-groub .btn {
+        font-size: 12px;
+    }
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 991px) {
+    .main-content{
+        margin: 0 !important;
+    }
+    .main-content .page-card .page-card-btn-groub{
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+    .main-content .page-card .table-title-buttons {
+        width: 50%;
+    }
+}
+
+/* small devices (landscape phones, less than 768px)*/
+@media (max-width: 768px) {
+    .main-content{
+        margin: 0 !important;
+    }
+    .main-content .page-card .form-header .form-main-title {
+        font-size: 18px;
+        width: 50%;
+    }
+    .main-content .page-card .form-header .form-header-line {
+        width: 100%;
+    }
+}
+
+/* small devices (portrait phones, less than 576px)*/
+@media (max-width: 576px){
+    .main-content .page-card .form-header .form-main-title {
+        font-size: 18px;
+        width: 100%;
+    }
+    .main-content .page-card .form-header .form-header-line {
+        width: 50%;
+    }
+    .main-content .page-card .form-content .form-label{
+        font-size: 13px;
+    }
+}
